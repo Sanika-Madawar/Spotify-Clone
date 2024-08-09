@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <!--this link is used to use different fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel = "icon" href = "./assets/logo.png">
+    <link rel="stylesheet" href="style.css"><!--linking the stylesheet-->
+    <title>Spotify - Web Player: Music for everyone</title>
+    <!--below three lines are used to connect to the google fonts...first 2 lines are used to preconnect (connected to the google apis before loading the page)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!---Creating a main div that would contain all the content of the website-->
+    <!--It will contain 3 partitions : 1.side bar 2. main page 3. music player within main class-->
+    <div class="main">
+        <div class="sidebar">
+            <!--creating 2 divisions i.e. navbar and library-->
+            <div class="nav">
+                <div class="nav-option" style="opacity: 1;"><!--opacity 1 means wont change upon hovering-->
+                    <i class="fa-solid fa-house"></i><!--copy this from font awesome---free icons-->
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass"></i><!--copy this from font awesome---free icons-->
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="library">
+                <div class="options">
+                    <div class="lib-option" >
+                        <img src="./assets/library_icon.png" alt="library_icon">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div><!--for plus and arrow-->
+                </div>
+                <div class="lib-boxes">
+                    <div class="box">
+                        <p class="box-p1">Create your first playlist</p>
+                        <p class="box-p2">It's easy, we'll help you</p>
+                        <button class="badge">Create playlist</button>
+                    </div>
+                    <!--copying above box to create new one-->
+                    <div class="box">
+                        <p class="box-p1">Let's find some podcasts to follow</p>
+                        <p class="box-p2">We'll keep you updated on new episodes</p>
+                        <button class="badge">Browse podcasts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                    <img src="./assets/backward_icon.png" alt="backward">
+                    <img src="./assets/forward_icon.png" alt="forward" class="hide"><!---hide class is given to those items that disappear when the screen size is decreased-->
+                </div>
+                <div class="sticky-nav-options">
+                    <button class="badge nav-item hide">Explore Premium</button>
+                    <button class="badge nav-item dark-badge"><i class="fa-regular fa-circle-down" style="margin-right: 7px;"></i>Install App</button>
+                    <i class="fa-regular fa-user" class="nav-item"></i>
+                </div>
+                
+                
+            </div>
+            <!--designing cards-->
+                <h2>Recently Played</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="./assets/card1img.jpeg" class="card-img">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily updates of the most played tracks...</p>                      
+                    </div>
+                </div>
+
+                <h2>Trending now near you</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="./assets/card2img.jpeg" class="card-img">
+                        <p class="card-title">Mahiye Jinna Sona</p>
+                        <p class="card-info">Darshan Raval</p>                      
+                    </div>
+                    <div class="card">
+                        <img src="./assets/card3img.jpeg" class="card-img">
+                        <p class="card-title">Mere Paas Tum Ho</p>
+                        <p class="card-info">Rahat Fateh Ali Khan</p>                      
+                    </div>
+                    <div class="card">
+                        <img src="./assets/card4img.jpeg" class="card-img">
+                        <p class="card-title">Naa Ready</p>
+                        <p class="card-info">Anirudh Ravichander , Thalapathy Vijay,...</p>                      
+                    </div>
+                    
+                </div>
+
+                <h2>Featured Charts</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="./assets/card5img.jpeg" class="card-img">
+                        <p class="card-title">Top Songs - Global</p>
+                        <p class="card-info">Your weekly updates of the most played tracks...</p>                      
+                    </div>
+                    <div class="card">
+                        <img src="./assets/card6img.jpeg" class="card-img">
+                        <p class="card-title">Top Songs - India</p>
+                        <p class="card-info">Your weekly updates of the most played tracks...</p>                      
+                    </div>
+                    <div class="card">
+                        <img src="./assets/card1img.jpeg" class="card-img">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your weekly updates of the most played tracks...</p>                      
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="line">
+
+                    </div>
+                </div>
+            
+            
+        </div>
+        <div class="music-player">
+            <div class="album">
+
+                <img src="/assets/card2img.jpeg"  class="album-img"alt="">
+                <div class="album-text">
+                    <p class="album-title"> Mahiye Jinna Sona</p>
+                    <p class="album-info">Darshan Raval</p>
+                </div>
+                <div class="like"> <i class="fa-regular fa-heart"></i></div>
+               
+
+            </div>
+            <div class="player">
+                <div class="player-controls"></div>
+                <img src="./assets/player_icon1.png" class="player-control-icon">
+                <img src="./assets/player_icon2.png" class="player-control-icon">
+                <img src="./assets/player_icon3.png" class="player-control-icon" style="opacity: 1;height: 2rem;">
+                <img src="./assets/player_icon4.png" class="player-control-icon">
+                <img src="./assets/player_icon5.png" class="player-control-icon">
+                <div class="playback-bar">
+                    <span class="curr-time">00:00</span>
+                    <input type="range" min="0" max="100" class="progress-bar">
+                    <span class="tot-tile">3:33</span>
+                </div>
+            </div>
+            <div class="controls">
+                <div class="mic"><i class="fa-solid fa-microphone"></i></div>
+                <div class="queue"><i class="fa-solid fa-equals"></i></div>
+                <div class="volume"><i class="fa-solid fa-volume-high"></i>
+                <input type="range" class="volume-control"></div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
